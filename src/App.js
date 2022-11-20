@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Blogs from "./components/Blogs/Blogs";
 import Main from "./layout/Main";
+import Statistics from "./components/Statistics/Statistics";
 
 function App() {
   const router = createBrowserRouter([
@@ -13,11 +14,21 @@ function App() {
       children: [
         {
           path: "/",
+          loader: () => {
+            return fetch("https://openapi.programming-hero.com/api/quiz");
+          },
           element: <Home />,
         },
         {
           path: "home",
+          loader: () => {
+            return fetch("https://openapi.programming-hero.com/api/quiz");
+          },
           element: <Home />,
+        },
+        {
+          path: "/statistics",
+          element: <Statistics />,
         },
         {
           path: "/blogs",
