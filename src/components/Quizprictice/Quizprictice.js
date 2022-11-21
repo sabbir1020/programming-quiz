@@ -25,9 +25,11 @@ const Quizprictice = () => {
           //   handleQuestion={handleQuestion}
         ></Questions>
       ))} */}
-      {quizs.data.questions.map((question) => (
-        <Questions question={question}></Questions>
-      ))}
+      <div>
+        {quizs.data.questions.map((question) => (
+          <Questions question={question}></Questions>
+        ))}
+      </div>
     </div>
   );
 };

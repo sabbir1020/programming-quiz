@@ -5,8 +5,8 @@ const Quiz = ({ quiz }) => {
   console.log(quiz);
   const { id, name, logo, total } = quiz;
   return (
-    <div className="border w-56">
-      <img className="w-60 h-60 border m-0 m-auto " src={logo} alt="" />
+    <div className="border ">
+      <img className="w-full h-60 border m-0 m-auto " src={logo} alt="" />
       <div>
         <p>{name}</p>
         <p>{total}</p>

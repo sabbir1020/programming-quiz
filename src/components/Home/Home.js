@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="mt-7 p-6">
       <h1>This is Home Pages {quizs.data.length}</h1>
-      <div className="grid grid-cols-4 gap-3">
+      <div className="grid md:grid-cols-4  gap-3">
         {quizs.data.map((quiz) => (
           <Quiz key={quiz.id} quiz={quiz}></Quiz>
         ))}
