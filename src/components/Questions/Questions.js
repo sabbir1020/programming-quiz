@@ -1,7 +1,8 @@
 import React from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee, faEye } from "@fortawesome/free-solid-svg-icons";
 const Questions = ({ question }) => {
-  console.log(question);
+  // console.log(question);
 
   const { options, correctAnswer } = question;
   const handleQuestion = (option) => {
@@ -12,16 +13,24 @@ const Questions = ({ question }) => {
       alert("wrong answer");
     }
   };
+  const rightAns = (correctAnswer) => {
+    alert(`${correctAnswer}`);
+  };
 
   //   console.log(question);
   //  const handleQuestion =
   return (
     <div className="border w-3/4  m-auto mt-7">
-      <h1 className="text-2xl">{question.question}</h1>
+      <div className="flex justify-center">
+        <h1 className="text-2xl">{question.question}</h1>
+        <FontAwesomeIcon
+          icon={faEye}
+          className="ml-10 mt-3 "
+          onClick={() => rightAns(correctAnswer)}
+        />
+      </div>
       {options.map((option) => (
-        <li onClick={() => handleQuestion(option)}>
-          {/* {onclick = {()=>handleQuestion(option)}} */}
-
+        <li key={option.toString()} onClick={() => handleQuestion(option)}>
           {option}
         </li>
       ))}

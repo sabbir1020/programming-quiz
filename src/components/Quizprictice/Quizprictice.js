@@ -6,18 +6,9 @@ const Quizprictice = () => {
   const quizs = useLoaderData();
   console.log(quizs);
 
-  //   const allQuiz = quizs.data;
-  //   //   const ca = allQuiz.correctAnswer;
-  //   //   console.log(ca);
-  //   //   console.log(allQuiz.questions);
-  //   //   console.log(allQuiz.questions.correctAnswer);
-  //   const handleQuestion = (ca) => {
-  //     // console.log(ca);
-  //   };
-
   return (
     <div>
-      {/* <h1 className="text-3xl">{allQuiz.name}</h1> */}
+      <h1 className="text-3xl">{quizs.data.name}</h1>
       {/* {allQuiz.questions.map((question) => (
         <Questions
           question={question}
@@ -27,7 +18,7 @@ const Quizprictice = () => {
       ))} */}
       <div>
         {quizs.data.questions.map((question) => (
-          <Questions question={question}></Questions>
+          <Questions question={question} key={question.id}></Questions>
         ))}
       </div>
     </div>
