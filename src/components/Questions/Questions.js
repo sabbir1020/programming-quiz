@@ -1,9 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
-const Questions = ({ question }) => {
-  // console.log(question);
 
+const Questions = ({ question }) => {
   const { options, correctAnswer } = question;
   const handleQuestion = (option) => {
     // console.log(option);
