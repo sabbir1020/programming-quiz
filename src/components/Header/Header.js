@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../../img/quiz-logo.png";
 const Header = () => {
   return (
-    <div className="bg-gray-400 flex justify-around">
+    <div className="bg-gray-400 flex justify-around fixed top-0 w-full">
       <div className="flex">
         <img className="w-14 h-14 p-1" src={logo} alt="" />
         <h1 className="text-2xl mt-3 ml-3">Programming Quiz </h1>

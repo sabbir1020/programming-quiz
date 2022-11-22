@@ -1,12 +1,12 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee, faEye } from "@fortawesome/free-solid-svg-icons";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
 const Questions = ({ question }) => {
   // console.log(question);
 
   const { options, correctAnswer } = question;
   const handleQuestion = (option) => {
-    console.log(option);
+    // console.log(option);
     if (option === correctAnswer) {
       alert("correctAnswer");
     } else {
@@ -17,8 +17,6 @@ const Questions = ({ question }) => {
     alert(`${correctAnswer}`);
   };
 
-  //   console.log(question);
-  //  const handleQuestion =
   return (
     <div className="border w-3/4  m-auto mt-7">
       <div className="flex justify-center">

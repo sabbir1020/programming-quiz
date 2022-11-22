@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Quiz = ({ quiz }) => {
-  console.log(quiz);
+  // console.log(quiz);
   const { id, name, logo, total } = quiz;
   return (
     <div className="border ">
