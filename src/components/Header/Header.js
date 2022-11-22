@@ -6,16 +6,16 @@ const Header = () => {
     <div className="bg-gray-400 flex justify-around">
       <div className="flex">
         <img className="w-14 h-14 p-1" src={logo} alt="" />
-        <h1 className="text-2xl mt-3 ml-3">Quiz </h1>
+        <h1 className="text-2xl mt-3 ml-3">Programming Quiz </h1>
       </div>
-      <nav>
-        <Link className="mr-4 " to="/home">
+      <nav className="mt-3">
+        <Link className="mr-4 text-xl " to="/home">
           Home
         </Link>
-        <Link className="mr-4 " to="/statistics">
+        <Link className="mr-4 text-xl " to="/statistics">
           Statistics
         </Link>
-        <Link className="mr-4 " to="/blogs">
+        <Link className="mr-4 text-xl " to="/blogs">
           Blogs
         </Link>
         {/* <Link to="/home">Home</Link> */}
