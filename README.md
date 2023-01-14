@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# https://inquisitive-caramel-3157f3.netlify.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+live link :  https://inquisitive-caramel-3157f3.netlify.app/.
 
 ## Available Scripts
 
